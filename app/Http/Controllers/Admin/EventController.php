@@ -63,7 +63,7 @@ class EventController extends Controller
         $categories = Kategori::all();
         $tickets = $event->tikets;
 
-        return view('admin.event.show', compact('event', 'categories', 'tickets'));
+        return view('admin.events.show', compact('event', 'categories', 'tickets'));
     }
     /**
      * Show the form for editing the specified resource.
